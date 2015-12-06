@@ -1,0 +1,39 @@
+<template name='summary'>
+<div class='post'>
+{{>infoSheet}}
+<div class="summaryInner">
+		<ul>
+		<li class="summary">
+			<h3>Self Summary</h3>
+			{{#if ownPost}}
+			<a class="edit" href="#">Edit</a>
+			{{/if}}
+			<p>{{summary}} </p>
+			{{#if edit_summary}}
+			{{> postEdit i='summary'}}
+			{{/if}}
+		</li>
+		<li class="weekend">
+			<h3>At weekend I usually</h3>
+			{{#if ownPost}}
+			<a class="edit" href="#">Edit</a>
+			{{/if}}
+			<p>{{weekend}} </p>
+			{{#if edit_weekend}}
+			{{> postEdit i='weekend'}}
+			{{/if}}
+		</li>
+		<li class="interesting">
+			<h3>The most interesting things I have done</h3>
+			{{#if ownPost}}
+			<a class="edit" href="#">Edit</a>
+			{{/if}}
+			<p>{{interesting}} </p>
+			{{#if edit_interesting}}
+			{{> postEdit i='interesting'}}
+			{{/if}}
+		</li>
+		</ul>	
+		</div>
+		</div>
+</template>

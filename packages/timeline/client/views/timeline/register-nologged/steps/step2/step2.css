@@ -1,0 +1,20 @@
+.main-container .form-group .helper{
+	color: green;
+}
+.main-container label{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #0A85C6;
+}
+.main-container .FBdiv{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.main-container .btn{
+	padding: 9px 23px;
+}
+
+.main-container .form-group .matchBtn{
+	margin-top: 15px;
+	float: right;
+}

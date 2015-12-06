@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="131.5px"
+	 height="135.5px" viewBox="0 0 131.5 135.5" enable-background="new 0 0 131.5 135.5" xml:space="preserve">
+<g id="Layer_1">
+	<path fill="none" stroke="#0A85C6" stroke-width="10" stroke-miterlimit="10" d="M30.5,42c0-19.616,15.674-34.793,35.29-34.793
+		c19.615,0,35.632,15.175,35.632,34.791l0,0L101.5,92.25c0,3.037-1.963,5.75-5,5.75h-60c-3.038,0-6-2.963-6-6V42"/>
+	
+		<line fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="102.247" y1="56.247" x2="122.753" y2="76.753"/>
+	
+		<line fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="29.753" y1="56.247" x2="9.247" y2="76.753"/>
+	
+		<line fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="79.5" y1="98" x2="79.5" y2="127"/>
+	
+		<line fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="53.5" y1="98" x2="53.5" y2="127"/>
+	<g>
+		<g id="favorite">
+			<path fill="#FFFFFF" d="M79.156,66.5l-1.202-1.202c-4.465-3.951-7.384-6.611-7.384-9.874c0-2.663,2.061-4.724,4.722-4.724
+				c1.46,0,2.919,0.687,3.864,1.803c0.945-1.116,2.404-1.803,3.865-1.803c2.66,0,4.722,2.061,4.722,4.724
+				c0,3.262-2.919,5.922-7.385,9.874L79.156,66.5z"/>
+		</g>
+	</g>
+	<circle fill="#0A85C6" cx="49.51" cy="37.344" r="6.01"/>
+	<circle fill="#0A85C6" cx="81.156" cy="37.344" r="6.01"/>
+</g>
+<g id="Layer_2" display="none">
+	<path display="inline" fill="none" stroke="#0A85C6" stroke-width="10" stroke-miterlimit="10" d="M30.5,43
+		c0-19.616,15.674-34.793,35.29-34.793c19.615,0,35.632,15.175,35.632,34.791l0,0l0.078,62.252c0,3.037-1.962,5.75-5,5.75h-60
+		c-3.038,0-6-2.963-6-6V43"/>
+	<circle display="inline" fill="#0A85C6" cx="53.51" cy="38.344" r="6.01"/>
+	<circle display="inline" fill="#0A85C6" cx="79.156" cy="38.344" r="6.01"/>
+	
+		<line fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="112.5" y1="53" x2="112.5" y2="82"/>
+	
+		<line display="inline" fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="29.753" y1="57.247" x2="9.247" y2="77.753"/>
+	
+		<line display="inline" fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="79.5" y1="111" x2="79.5" y2="140"/>
+	
+		<line display="inline" fill="none" stroke="#0A85C6" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="53.5" y1="111" x2="53.5" y2="140"/>
+</g>
+</svg>

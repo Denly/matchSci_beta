@@ -1,0 +1,42 @@
+<template name="searchBar">
+<form class="searchBar form page">
+
+  <div class="form-group {{errorClass 'near'}}">
+
+      <label class="control-label" for="near">with in  km</label>
+      <div class="controls">
+          <input name="near" type="text" value="{{itemText}}" placeholder="200" class="form-control"/>
+          <span class="help-block">{{errorMessage 'near'}}</span>
+      </div>
+    </div>
+    <!--<div class="row">-->
+    {{#each option}}
+    {{> searchOption}}
+    {{/each}}
+    <!--</div> /.row --> 
+
+    <br>
+
+    <input type="submit" value="Search" class="btn btn-primary submit"/>
+  </form>
+</template>
+
+<template name="searchOption">
+
+  <div class="row searchOption {{view}}">
+    <div class="col-lg-4">
+      <span class="input-group">
+        {{item}}
+      </span>
+      </div>
+      <div class="col-lg-8">
+      {{#if selections}}
+      {{> dropdownEditor}}
+      {{else}}
+      {{> sliderEditor}}
+      <!--{{> numberEditor}}-->
+      {{/if}}
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+
+</template>

@@ -1,0 +1,12 @@
+<template name="bubbleItem">
+<div class="message-box {{sideClass}}">
+      <div class="picture">
+        <img src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}} title="user name"/>
+        <span class="time">10 mins</span>
+      </div>
+      <div class="message">
+        <span>{{fromName}}</span>
+        <p>{{text}}</p>
+      </div>
+    </div>
+</template>

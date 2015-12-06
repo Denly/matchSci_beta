@@ -1,0 +1,4 @@
+MS.Message = {
+  Collections:{},
+  Functions: {}
+}

@@ -1,0 +1,9 @@
+<template name="numberEditor">
+  
+  {{#if isMultiInput}}
+    <input type="number" name="from" value={{from}} class="form-control {{itemClass}}">
+    <input type="number" name="to" value={{to}} class="form-control {{itemClass}}">
+  {{else}}
+    <input type="number" value={{value}} class="form-control {{itemClass}}">
+  {{/if}}
+</template>

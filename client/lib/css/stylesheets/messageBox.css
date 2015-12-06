@@ -1,0 +1,43 @@
+.messageBoxClass{
+	width: 70%;
+	float: right;
+	height: 100%;
+}
+.messageBoxClass .messageBoxTitle{
+	height: 15%;
+	font-size: auto;
+}
+.messageBoxClass .messagediv {
+    height: 55%;
+    overflow-y: scroll;
+}
+
+.messageBoxClass .messageSend{
+	height: 20%;
+}
+
+.messageBoxClass .headImg{
+	height: 100%;
+	width: auto;
+	border-radius: 50%;
+	display: inline;
+}
+.messageBoxClass .headImgSmall{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: inline;
+}
+.messageBoxClass h2{
+	display: inline;
+}
+.messageBoxClass h4{
+	display: inline;
+}
+.messagediv span{
+	color: #3b5998;
+}
+.messagediv p{
+	padding-left: 55px;
+}
+

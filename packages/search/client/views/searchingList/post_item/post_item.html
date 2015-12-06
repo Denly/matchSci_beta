@@ -1,0 +1,26 @@
+<template name="postItem">
+	<div class="post seachingList">
+		<div class="post-content">
+
+			<a href="{{pathFor 'postPage'}}">
+			<div class="image-container-post-item">
+			<img class="headImg" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+			</div>
+			{{#if Online}}
+			<div class="Online"></div>
+			{{/if}}
+
+			<div class="postItemInfo">
+			<h3>{{author}}</h3>
+
+			<p>match {{stars}} <img class="postStar" src="yellowStar.svg"></p>
+			<p>submitted at {{submmitedAt submitted}}</p>
+			</div>
+			</a>
+		</div>
+		{{> likeBtn }}
+		{{> messageBtn }}
+		<a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">View Profile</a>
+
+	</div>
+</template>

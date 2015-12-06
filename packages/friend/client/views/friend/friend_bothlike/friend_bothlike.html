@@ -1,0 +1,11 @@
+<template name="bothLike">
+{{> friend}}
+	<div class="posts">
+	<div class="post">
+		<h2>You both like each other</h2>
+	</div>
+		{{#each bothLike}}
+		{{> postItem}}
+		{{/each}}
+	</div>
+</template>

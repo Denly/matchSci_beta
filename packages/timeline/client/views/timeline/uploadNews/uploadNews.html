@@ -1,0 +1,42 @@
+<template name='uploadNews'>
+	<div class="post uploadNews">
+		{{#if isUser}}
+		<!--post or ask or search-->
+		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			<a class="btn btn-default newPost" role="button"><i id='newPostIcon'></i> new post</a>
+			<a class="btn btn-default issue" role="button"><i id='newPostIcon'></i> ask question</a>
+			<a class="btn btn-default search" role="button"><i id='newPostIcon'></i> search posts</a>
+		</div>
+		<!--input text for both post and ask-->
+		{{#unless search}}
+		<div class="form-group {{errorClass 'text'}}">
+			<div class="controls">
+				<textarea class="form-control" rows="4" cols="50" placeholder= {{placeholder}}></textarea>	
+				<span class="help-block">{{errorMessage 'text'}}</span>
+			</div>
+			{{#each opt}}
+			{{> uploadOption}}
+			{{/each}}
+			{{#if opt}}
+			<div class="row">
+				<div class="col-sm-12">
+					<a class="issue">  + add option..</a>
+				</div>
+			</div>
+			{{/if}}
+		</div>
+		<input type="submit" value="Send" class="btn btn-primary submit"/>
+		<button class="uploadImg btn btn-default">+ Upload Image</button>
+
+		{{#if NewsFilepickerId}}
+		<br>
+		<img class="newsImg" src={{filepickerIdToImageUrl NewsFilepickerId h=300 w=500 align='faces' fit='crop' placehold_it='200x200'}}>		
+		{{/if}}
+		<br>
+		{{/unless}}<!--end of unless seach-->
+		{{#if search}}
+		{{> searchingIssue}}
+		{{/if}}
+		{{/if}}
+	</div>
+</template>

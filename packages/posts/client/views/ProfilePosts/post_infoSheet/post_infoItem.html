@@ -1,0 +1,22 @@
+<template name='infoItem'>
+ <tr>
+  <td>{{item}}</td>
+  {{#if objectFind editing type}}
+  <td>
+  {{#if selections}}
+    {{> dropdownEditor}}
+  {{else}} 
+    {{> numberEditor}}
+  {{/if}}
+  </td>
+   
+  {{else}}
+  <td>{{value}} {{unit}}</td> 
+  {{/if}}
+</tr>
+</template>
+
+
+<template name="infoSelection">
+  <li class="{{light}}"><a class="dropdownOption"> {{option}} </a></li>
+</template>

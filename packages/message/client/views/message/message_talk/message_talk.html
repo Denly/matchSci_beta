@@ -1,0 +1,27 @@
+<template name='messageTalk'>
+<div class="messageContainer">
+{{> messageList}}
+<div class="messageBoxClass">
+<div class="post messageBoxTitle">
+	<img class="headImg" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+	{{#if Online}}
+			<div class="Online"></div>
+	{{/if}}
+	<b>{{talkto}}</b>
+</div>
+	<div class="post messagediv">
+		{{#each message}}
+		{{> talk}}
+		{{/each}}
+	</div>
+	{{> messageSend}}
+	</div><!--end of messageBoxClass-->
+	</div>
+</template>
+
+<template name='talk'>
+<img class="headImgSmall" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+<h4><span>{{fromName}}</span></h4>
+<p> {{text}} </p>
+</template>
+

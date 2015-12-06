@@ -1,0 +1,8 @@
+<template name="postsList">
+  {{> searchStatus}}
+  <div class="posts">
+    {{#each posts}}
+      {{> postItem}}
+    {{/each}}
+  </div>
+</template>

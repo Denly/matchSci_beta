@@ -1,0 +1,57 @@
+.seachingList.post{
+	width: 40%;
+	margin-right: 10px;
+	margin-left: 10px;
+	display: inline-block;
+}
+.seachingList .headImg{	
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+.post-content .Online{
+	width: 10px;
+	height: 10px;
+	background-color: rgb(51, 204, 51);
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 60px;
+	margin-left: -13px;
+}
+.post-content .postItemInfo{
+	padding: 20px;
+	display: inline-block;
+}
+.searchBar .form-control{
+	width: 50%;
+}
+
+.postStar{
+	width: 30px;
+}
+
+.searchFilter{
+	position: fixed !important;
+	z-index: 10;
+	top: 80px;
+	left: 50%;
+	margin-left: -400px;
+    height: auto;
+    width: 800px;
+    border: 2px solid rgb(10,133,198);
+    color: rgb(10,133,198);
+}
+.searchFilter img{
+	height: 50px;
+	width: 50px;
+	margin-left: 18%;
+}
+
+.searchFilter .cancelX {
+    font-weight: bold;
+    color: rgb(10,133,198);
+    font-size: 30px;
+    float: right;
+    line-height: 10px;
+}

@@ -1,0 +1,51 @@
+.light a{
+	background-color: rgb(200,200,250);
+}
+
+.dropdown-menu > li > a {
+  float: left;
+  width: 100%;
+}
+
+.dropdown-menu .headImg{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	display: inline;
+}
+
+.logo{
+	height: 50px;
+	margin-top: -15px;
+}
+
+.navbar-brand{
+	
+}
+/*.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: red;
+}*/
+
+/*.navbar-nav{
+	float: right;
+}don't need this bc navbar-right, but Where is navbar-right works !?? */
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+    
+    
+}
+.navbar{
+	border-radius: 0px;
+	border-width: 0px;
+	background-color: #0A85C6;
+	position: fixed;
+	z-index: 20;
+	left: 0px;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+}
+
+.iconInBar{
+	height: 25px;
+}

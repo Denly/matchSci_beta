@@ -1,0 +1,32 @@
+<template name='profile'>
+  <div class='post profile'>
+    <h2>{{author}}</h2>
+    <a class="swipebox" href={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}} title="{{author}}">
+      <img class="headImg" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+    </a>
+    {{#if Online}}
+      <div class="Online"></div>
+    {{/if}}
+
+    {{> messageBtn}}
+    {{> likeBtn}}
+    {{address}}
+    {{#if user}}
+      distance:
+      {{distance}}
+      Km
+    {{/if}}
+    {{#if ownPost}}
+      <button class="uploadImg btn btn-default">Upload Image</button>
+      <button class="getLocation btn btn-default">getLocation</button>
+      <p id="demo">Location
+        {{location}}{{address}}
+      </p>
+      
+      {{#if loading}}
+        {{> spinner}}
+      {{/if}}
+    {{/if}}
+
+  </div>
+</template>

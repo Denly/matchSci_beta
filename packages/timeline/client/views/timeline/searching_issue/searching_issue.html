@@ -1,0 +1,18 @@
+<template name='searchingIssue'>
+<br>
+<input name="text" id="text" type="text" value="" placeholder="type keywords to search quizzes" class="form-control">
+<br>
+<input type="submit" value="Search query" class="btn btn-primary submit">
+<br>
+<!--
+<div class="post">
+Do you mean...
+	{{#each issueArr}}
+	{{> issueBar}}
+	{{/each}}
+</div>-->
+</template>
+
+<template name='issueBar'>
+<p><a>{{text}}</a></p>
+</template>

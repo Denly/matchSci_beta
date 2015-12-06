@@ -1,0 +1,14 @@
+<template name='messageSend'>
+<div class="messageSend">
+<form class="main form page">
+    <div class="form-group {{errorClass 'text'}}">
+      <div class="controls">
+          <input name="text" id="text" type="text" value="" placeholder="Name your post" class="form-control"/>
+          <span class="help-block">{{errorMessage 'text'}}</span>
+      </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</div>
+
+</template>

@@ -1,0 +1,13 @@
+
+<template name="visitor">
+{{> friend}}
+	<div class="posts">
+	<div class="post">
+		<h2>Visitor</h2>
+	</div>
+		{{#each visitor}}
+		{{> postItem}}
+		{{/each}}
+	</div>
+</template>
+

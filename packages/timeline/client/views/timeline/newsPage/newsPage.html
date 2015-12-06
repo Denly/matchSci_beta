@@ -1,0 +1,24 @@
+<template name='newsPage'>
+  {{#if isRegisterStep}}
+    
+    {{> registerNonLogged}}
+    
+    {{else}}
+
+    <div class="newsPage">
+      {{> uploadNews}}
+      {{#each newsStream}}
+        {{> news}}
+      {{/each}}
+
+      {{#if Template.subscriptionsReady}}
+        {{#if hasMorePosts}}
+          <a class="load-more" href="#">Load More</a>
+        {{/if}}
+        {{else}}
+        <div class="loading">{{>spinner}}</div>
+      {{/if}}
+    </div>
+    
+  {{/if}}
+</template>

@@ -1,0 +1,24 @@
+<template name='postPage'>
+  <div class='profile page'>
+    {{> profile}}
+    <ul class="nav nav-tabs">
+      <li class="active" role="presentation">
+        <a class="navP" id="Summary">Summary</a>
+      </li>
+      <li role="presentation">
+        <a class="navP" id="Post">Post</a>
+      </li>
+      <li role="presentation">
+        <a class="navP" id="Issue">Issue</a>
+      </li>
+      <li role="presentation">
+        <a class="navP" id="Photo">Photo</a>
+      </li>
+    </ul>
+    {{#if switchTemplate 'Summary'}}{{> summary}}{{/if}}
+    {{#if switchTemplate 'Post'}}{{> newsPage}}{{/if}}
+    {{#if switchTemplate 'Issue'}}{{> newsPage}}{{/if}}
+    {{#if switchTemplate 'Photo'}}{{> newsPage}}{{/if}}
+  </div>
+
+</template>

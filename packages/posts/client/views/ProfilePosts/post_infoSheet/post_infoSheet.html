@@ -1,0 +1,38 @@
+<template name='infoSheet'>
+
+  <div class="infoSheet">
+    <div class="form-group">
+      <table>
+       <thead>
+        <tr>
+         <th>Looking for </th>
+         <th>male 
+         {{#if ownPost}}<a class="infoTableEdit1">edit</a>{{/if}}
+         </th>
+       </tr>
+     </thead>
+     {{#each LookingForItem}}
+     {{>infoItem}}
+     {{/each}}
+
+   </table>
+ </div>
+ 
+ <br>
+
+ <table>
+   <thead>
+    <tr>
+     <th>I'm </th>
+     <th>female 
+     {{#if ownPost}}<a class="infoTableEdit2">edit</a>{{/if}}
+     </th>
+   </tr>
+ </thead>
+ {{#each AboutMeItem}}
+ {{>infoItem}}
+ {{/each}}
+</table>
+
+</div>
+</template>

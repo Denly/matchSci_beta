@@ -1,0 +1,28 @@
+.step3 .headImgInStep3{
+	height: 100px;
+	width: 100px;
+}
+
+.step3{
+    text-align: center;
+}
+
+.step3 div{
+	display: inline-block;
+	width: 100px;
+	height: 150px;
+	margin: 15px;
+}
+
+.main-container .step3 .btn {
+	margin: 5px;
+    padding: 7px 18px;
+}
+
+.main-container .step3 .matchBtn.red {
+	position: fixed;
+	bottom: 50px;
+	right: 300px;
+    background: none repeat scroll 0 0 #f49ac1;
+    color: white;
+}

@@ -1,0 +1,41 @@
+<template name='bigImgView'>
+<div class="darkFilter">
+	<div class="fix-container post">
+	<div class="bigImgDiv">
+	 <span class="helper"></span>
+		<img class="newsImg" src={{filepickerIdToImageUrl NewsFilepickerId align='faces' fit='crop' placehold_it='200x200'}}>
+	</div>
+	<div class="rightPost">
+	<a class="cancelX" title="Cancel without saving">×</a>
+	<img class="headImg" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+		<a class="name" href="{{toProfile}}">{{author}}</a>
+
+		<div class="showMore">
+			{{text}}
+		</div>
+		<p><a class="showing">show more</a></p>
+		
+		<!--{{#if opt}}
+		<lo class='options'>
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-1">
+					<p>You</p>
+				</div>
+				<div class="col-sm-3">
+					<p>Your match</p>
+				</div>
+				<div class="col-sm-3">
+				</div>
+			</div>
+			{{#each opt}}
+				{{> option}}
+			{{/each}}
+		</lo>
+		{{/if}}-->
+		<br>
+</div>
+	</div>
+</div>
+</template>

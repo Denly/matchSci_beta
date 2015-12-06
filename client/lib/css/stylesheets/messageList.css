@@ -1,0 +1,46 @@
+.messageContainer{
+	position: fixed;
+    top: 55px;
+    left: 10px;
+    right: 0px;
+    bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+
+.messageListClass{
+	width: 25%;
+    float: left;
+    height: 100%;
+    overflow: scroll;
+}
+.messageListClass .headImg{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: inline;
+}
+.messageListClass .headImgSmall{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: inline;
+}
+.messageListClass h2{
+	display: inline;
+}
+.messageListClass h4{
+	display: inline;
+}
+.messagediv span{
+	color: #3b5998;
+}
+.messagediv p{
+	padding-left: 55px;
+}
+.messagediv {
+    height: 500px;
+    overflow-y: scroll;
+}

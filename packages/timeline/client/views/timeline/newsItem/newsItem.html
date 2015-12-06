@@ -1,0 +1,50 @@
+<template name='news'>
+	<div class="post news">
+		<img class="headImg" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+		<a class="name" href="{{toProfile}}">{{author}}</a>
+
+		<div class="showMore">
+			{{text}}
+		</div>
+		<p><a class="showing">show more</a></p>
+		
+		{{#if opt}}
+		<lo class='options'>
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-1">
+					<p>You</p>
+				</div>
+				<div class="col-sm-3">
+					<p>Your match</p>
+				</div>
+				<div class="col-sm-3">
+				</div>
+			</div>
+			{{#each opt}}
+				{{> option}}
+			{{/each}}
+		</lo>
+		{{/if}}
+		<br>
+		{{#if NewsFilepickerId}}
+		<div class="imgDiv">
+		<a><img class="newsImg" src={{filepickerIdToImageUrl NewsFilepickerId h=300 w=500 align='faces' fit='crop' placehold_it='200x200'}}></a>
+		</div>
+		{{/if}}
+			<!--<textarea name="comment" id="make-a-comment" rows="2" cols="40"></textarea><br><br>
+			{{#each showComments}}
+			  <span> Owner Comment : {{this.ownerId}}</span>
+				<span> Comment : {{this.commentBody}}</span>
+			{{/each}}<br>-->
+	</div>
+	{{#if showBigImg }}
+	{{> bigImgView HeadFilepickerId=HeadFilepickerId 
+	author=author
+	toProfile=toProfile
+	text=text
+	opt=opt
+	NewsFilepickerId=NewsFilepickerId}}
+	{{/if}}
+</template>

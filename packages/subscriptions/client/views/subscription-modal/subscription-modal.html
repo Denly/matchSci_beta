@@ -1,0 +1,65 @@
+<template name="subscriptionModal">
+  <div class="modal fade" id="subscription-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id=""></h4>
+        </div>
+        <div class="modal-body">
+          {{#if showLoadingMessage}}
+          <div class="wait_data_message">
+            <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate">
+            </span> Hang tight, fetching data from server...
+          </div>
+          {{/if}}
+          <div class="pay_with_cc_container">
+            <div class="credit_card_inputs">
+              {{#if isUserRegisted}}
+                {{#if isUserAlreadyASubscriptionMember}}
+                  <button
+                  id="cancel-customer-subscription"
+                  class="btn primary_global_btn large-button authorize_card_btn">
+                  Unsubscribe To Matschi Plan
+                </button>
+                  {{else}}
+                  <button id="subscribe-user"
+                  class="btn primary_global_btn large-button authorize_card_btn">
+                  Subscribe To Matschi Plan
+                </button>
+                {{/if}}
+              {{else}}
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Contact Information</label>
+                  <input type="text" class="form-control" id="cardholder-email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Payment</label>
+                  <input type="text" class="form-control" id="card-number" placeholder="Credit card number">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <input type="text" class="form-control" id="exp-month" placeholder="MM" maxlength="2"> </div>
+                    <div class="col-md-3">
+                      <input type="text" class="form-control" id="exp-year" placeholder="YY" maxlength="2"> </div>
+                    <div class="col-md-6">
+                      <input type="password" class="form-control col-md-6" id="cvc" placeholder="CVC" maxlength="3"> </div>
+                  </div>
+                </div>
+                <!-- grand-total-credit-card -->
+                <p class="cc_note">You card will be charged for the total amount of 9.99dlls.</p>
+                <div class="form-group text-center">
+                  <button type="submit" id="connect-userdata" class="btn primary_global_btn large-button authorize_card_btn">
+                    AUTHORIZE CARD
+                  </button>
+                </div>
+              </form>
+              {{/if}}
+              <!-- .credit_card_inputs -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

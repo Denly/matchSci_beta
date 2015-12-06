@@ -1,0 +1,70 @@
+.attach-payment-source {
+  width: 362px;
+}
+
+.payment-connect-warning-modal,.stripe-connect-warning-modal
+{
+	width:360px;
+}
+.payment-connect-warning-modal .modal-body,.stripe-connect-warning-modal .modal-body
+{
+	padding:0;
+}
+
+.pay_with_cc_container {
+  width: 360px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.attach-payment-source {
+  width: 362px;
+}
+.attach-payment-source .modal-body {
+  padding: 0;
+}
+
+.credit_card_inputs {
+  width: 100%;
+  padding: 15px;
+}
+
+.credit_card_inputs label, .stripe_connect_inner label {
+  color: #575757;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.2;
+}
+.credit_card_inputs input[type="text"], .stripe_connect_inner input[type="text"] {
+  color: #444;
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 14px;
+}
+.primary_global_btn {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#56bbd9+0,44abc9+50,389fbd+84,3198b6+100 */
+  background: #56bbd9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #56bbd9 0%, #44abc9 50%, #389fbd 84%, #3198b6 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56bbd9), color-stop(50%, #44abc9), color-stop(84%, #389fbd), color-stop(100%, #3198b6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #56bbd9 0%, #44abc9 50%, #389fbd 84%, #3198b6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #56bbd9 0%, #44abc9 50%, #389fbd 84%, #3198b6 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #56bbd9 0%, #44abc9 50%, #389fbd 84%, #3198b6 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #56bbd9 0%, #44abc9 50%, #389fbd 84%, #3198b6 100%);
+  /* W3C */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#56bbd9', endColorstr='#3198b6', GradientType=0);
+  /* IE6-9 */
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #62B3CB;
+  font-family: 'Abel';
+}

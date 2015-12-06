@@ -1,0 +1,4 @@
+MS.Timeline = {
+	Collections: {},
+	Functions: {}
+}

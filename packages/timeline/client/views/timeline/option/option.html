@@ -1,0 +1,59 @@
+<template name='option'>
+
+	<div class="row option">
+		<div class="col-sm-4">
+			<div class="input-group issueOpt">
+			{{#if creatingIssue}}
+				<input type="text" class="form-control optInput" aria-label="..." placeholder="Option 1">
+
+			{{else}}
+				<p> {{text}} </p>
+			{{/if}}
+			</div>
+			</div><!-- /.col-lg -->
+			<div class="col-sm-1">	
+			<div class="input-group">			
+					<input class="userAns" checked= {{isChecked}} type="checkbox" aria-label="...">
+			</div>
+			</div><!-- /.col-lg -->
+			<div class="col-sm-3">
+			<div class="input-group">
+				{{ >starRating }}
+				</div>	
+			</div><!-- /.col-lg -->
+		<!-- /input-group -->
+		<div class="col-sm-4">
+			{{#if creatingIssue}}
+				<span class="input-group">
+					<button type="button" class="close deleOpt" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</span>
+			{{/if}}
+			{{#each heads}}
+			{{> userHeads}}
+			{{/each}}
+		</div>
+	</div>
+</template>
+
+<template name='userHeads'>
+	<img class="choseImg" src={{filepickerIdToImageUrl this h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+</template>
+
+<template name='starRating'>
+<form>
+      <span class="starRating">
+        <input id="{{CheckboxId 5}}" checked={{equal rating 5}} type="radio" name="{{rating}}" value="5">
+        <label class="star5" for="{{CheckboxId 5}}"></label>
+        <input id="{{CheckboxId 4}}" checked={{equal rating 4}} type="radio" name="ratingInput" value="4">
+        <label class="star4" for="{{CheckboxId 4}}"></label>
+        <input id="{{CheckboxId 3}}" checked={{equal rating 3}} type="radio" name="ratingInput" value="3">
+        <label class="star3" for="{{CheckboxId 3}}"></label>
+        <input id="{{CheckboxId 2}}" checked={{equal rating 2}} type="radio" name="ratingInput" value="2">
+        <label class="star2" for="{{CheckboxId 2}}"></label>
+        <input id="{{CheckboxId 1}}" checked={{equal rating 1}} type="radio" name="ratingInput" value="1">
+        <label class="star1" for="{{CheckboxId 1}}"></label>
+        <p>{{words}}</p>
+      </span>
+</form>
+
+</template>

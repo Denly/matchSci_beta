@@ -1,0 +1,42 @@
+<template name = 'searchStatus'>
+<a class="searchStatus"><h4>Looking for woman, age 20-30...</h4></a>
+{{#if openFilter}}
+{{> searchFilter}}
+{{/if}}
+</template>
+
+
+<template name = 'searchFilter'>
+<div class="post searchFilter">
+
+<a class="cancelX" title="Cancel without saving">×</a>
+<a class="filterView"><img src="./search_page/physical.svg" id="physical"></a>
+<a class="filterView"><img src="./search_page/inside.svg" id="inner"></a>
+<a class="filterView"><img src="./search_page/quiz.svg" id="quiz"></a>
+<br><br>
+{{! global slider}}
+{{#if thereIsSomethingToShow}}
+{{> searchBar}}
+{{/if}}
+{{#if wichViewShow 'physical'}}
+<!--{{> physical}}
+
+  HI IM THE physical VIEW <br>
+  <br>
+  slider value is : {{sliderValue}}
+  -->
+{{/if}}
+
+{{#if wichViewShow 'inner'}}
+{{> inner}}
+  HI IM THE inside VIEW<br>
+  slider value is : {{sliderValue}}
+{{/if}}
+
+{{#if wichViewShow 'quiz'}}
+  HI IM THE quiz VIEW<br>
+  slider value is : {{sliderValue}}
+{{/if}}
+</div>
+
+</template>

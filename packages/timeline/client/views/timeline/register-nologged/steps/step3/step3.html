@@ -1,0 +1,17 @@
+<template name="step3">
+<div class="step3">
+	<h4>Please click at least 3 image you like to get analysis, or <a class="skip">Skip it</a> </h4> 
+	<button class="matchBtn red next">Done</button>
+	
+		{{#each	headImgData}}
+		{{> HeadImg}}
+		{{/each}}
+	</div>
+</template>
+
+<template name='HeadImg'>
+<div>
+<img class="headImgInStep3" src={{filepickerIdToImageUrl filepickerId h=100 w=100 align='faces' fit='crop' placehold_it='200x200'}}>
+{{> likeBtn}}
+</div>
+</template>

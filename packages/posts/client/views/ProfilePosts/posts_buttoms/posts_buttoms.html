@@ -1,0 +1,19 @@
+<!--
+1. a btn for like and unline 
+usage: {{> likeBtn _id=this._id}}
+if _id is null, catch Template.parentData(0) or Template.parentData(1)
+
+2. a btn for {{> messageBtn}}
+-->
+
+<template name='likeBtn'>
+	{{#if liked}}
+		<a class="unlike discuss btn btn-default">Unlike Her</a>
+	{{else}}
+		<a class="liking discuss btn btn-default">Like Her</a>
+	{{/if}}
+</template>
+
+<template name='messageBtn'>
+	<a class="discuss btn btn-default">Message Her</a>
+</template>

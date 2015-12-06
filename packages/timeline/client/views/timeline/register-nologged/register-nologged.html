@@ -1,0 +1,27 @@
+
+
+<template name="registerNonLogged">
+	<div class="main-container">
+		<div class="section1">
+			<!--<div class="overlay-login-form"></div>-->
+			<div class="register-content">
+				{{> Template.dynamic template= currentStep}}
+				<!--
+				{{#if normalStep}}
+				<button class="matchBtn red next" id="{{currentStep}}">Next</button>
+				<button class="matchBtn blue back" id="{{currentStep}}">back</button>
+				{{else}}
+				{{#if firstStep}}
+				 <button class="matchBtn red next" id="{{currentStep}}">Next</button>
+				{{/if}}
+				{{#if lastStep}}
+				<button class="matchBtn blue back" id="{{currentStep}}">back</button>
+				{{/if}}
+				{{/if}}-->
+			</div>
+		</div>
+		<div class="section2">
+		<h3>why matchSci? intro at here</h3>
+		</div>
+	</div>
+</template>

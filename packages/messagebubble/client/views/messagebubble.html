@@ -1,0 +1,37 @@
+<template name="chatBubble">
+{{#if targetName}}
+  <div class="chatBubble">
+    <div class="header">
+      <h2>{{targetName}}</h2>
+      <a title="Add Friend to this chat">×</a>
+    </div>
+    {{#if open}}
+    <div class="chat-box">
+      <div class="textArea">
+        {{#each bubble}}
+        {{> bubbleItem}}
+        {{/each}}
+      </div>
+      <div class="enter-message">
+        <input type="text" placeholder="Enter your message.."/>
+        <a href="#" class="send">Send</a>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+  {{/if}}
+</template>
+
+
+<!--
+<div class="message-box right-img">
+      <div class="picture">
+        <img src="http://www.filepicker.io/api/file/vqMjBNw0SLuSxObAaAdX/convert?h=200&w=200&align=faces&fit=crop" title="user name"/>
+        <span class="time">2 mins</span>
+      </div>
+      <div class="message">
+        <span>Mike Moloney</span>
+        <p>Pretty good, Eating nutella, nommommom</p>
+      </div>
+    </div>
+-->

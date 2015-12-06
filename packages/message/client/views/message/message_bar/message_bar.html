@@ -1,0 +1,20 @@
+<template name='messageBar'>
+
+  <div class="post">
+    <div class="post-content">
+      <a class="swipebox" href={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}} title="{{userName}}">
+        <img class="headImg" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+      </a>
+      <h3>{{from_re}}
+        {{talkto}}
+        <span>{{text}}
+        </span>
+      </h3>
+      <p>{{submitted}}
+        by
+        {{userName}}</p>
+    </div>
+    <a class="discuss btn btn-default" href="">delete</a>
+    <a class="discuss btn btn-default" href="{{messageTalkLink}}">Message Her</a>
+  </div>
+</template>

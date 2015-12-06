@@ -1,0 +1,57 @@
+.darkFilter{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.86);
+	z-index: 25;
+}
+
+.fix-container{
+	width: 80% !important;
+	height: 80%;
+	margin-top: 30px;
+	z-index: 26;
+}
+
+.rightPost{
+	padding: 10px;
+	float: right;
+    width: 30%;
+    height: 100%;
+    overflow: scroll;
+	display: inline-block;
+}
+
+.rightPost .cancelX {
+    float: right;
+    margin-top: -14px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(156, 156, 156);
+   }
+
+
+.fix-container .bigImgDiv {
+    height: 100%;  /* equals max image height */
+    width: 70%;
+    float: left;
+    /* border: 1px solid red; */
+    background-color: black;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.fix-container .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.fix-container .newsImg {
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: -4px;
+}

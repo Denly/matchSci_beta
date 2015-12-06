@@ -1,0 +1,38 @@
+.profile .headImg{
+	height: 200px;
+	width: 200px;
+	
+}
+
+.profile .Online{
+	width: 10px;
+	height: 10px;
+	background-color: rgb(51, 204, 51);
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 60px;
+}
+
+.profileNews .headImg{	
+	height: 30px;
+	width: 30px;	
+	display: inline-block;
+}
+
+.profileNews .name{
+	visibility: hidden;
+}
+.infoSheet{
+	float: right;
+	padding-top: 20px;
+	padding-right: 40px;
+} 
+.infoSheet table{
+	
+}
+.infoSheet table td{
+	width: 107px;
+}
+.infoSheet a{
+	float: right;
+}

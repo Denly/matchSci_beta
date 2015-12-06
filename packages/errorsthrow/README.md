@@ -1,0 +1,1 @@
+using Errors.throw('string'); to show beautiful notification of errors on screen.

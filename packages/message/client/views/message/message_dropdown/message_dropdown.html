@@ -1,0 +1,33 @@
+<template name="notifications">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <img class="iconInBar" src="/message.svg">
+    {{#if notificationCount}}
+      <span class="badge badge-inverse">{{notificationCount}}</span>
+    {{/if}}
+    <b class="caret"></b>
+  </a>
+  <ul class="notification dropdown-menu">
+    {{#if allnotificationCount}}
+      {{#each notifications}}
+        {{> notificationItem}}
+      {{/each}}
+        {{> toAllMessage}}
+    {{else}}
+      <li><span>No Notifications</span></li>
+    {{/if}}
+  </ul>
+</template>
+
+<template name="notificationItem">
+  <li class="{{light}}">
+    <a href="{{notificationPostPath}}">
+    <img class="headImg" src={{filepickerIdToImageUrl HeadFilepickerId h=200 w=200 align='faces' fit='crop' placehold_it='200x200'}}>
+      {{from_re}}<strong>{{talkto}}</strong> : {{shortText}}
+</a> </li>
+</template>
+
+<template name="toAllMessage">
+  <li>
+    <a>To all message list</a> 
+  </li>
+</template>

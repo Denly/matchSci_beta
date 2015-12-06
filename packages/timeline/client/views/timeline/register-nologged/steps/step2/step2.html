@@ -1,0 +1,60 @@
+<template name="step2">
+<div class="FBdiv">
+<button class="btn btn-primary" id="login_with_facebook">Sign in with Facebook</button>
+</div> 
+
+         <div class="strike">
+          <span>or</span>
+         </div>
+
+  <div class="form-group">
+  <div class="row">
+    <div class="col-lg-6">
+    <label>User Name</label>
+      <input name="username" id="" type="text" placeholder="anyname" class="form-control"/>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+    <label>Password</label>
+      <input name="password" id="" type="password" placeholder="more than 6 digit" class="form-control"/>
+    </div><!-- /.col-lg-6 -->
+  </div><!-- /.row -->
+
+
+  <div class="row">
+  <div class="col-lg-6">
+  <label>Birthday</label>
+      <input name="birthday" id="" type="date" class="form-control"/>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+  <label>Email</label>
+      <input name="email" id="" type="text" placeholder="abc@abc.com" class="form-control"/>
+  </div><!-- /.col-lg-6 -->
+
+</div><!-- /.row -->
+
+  <div class="row">
+  <div class="col-lg-6">
+  <label>country</label><span class='helper'> {{GPSstatus}}</span>
+      <input name="country" value="{{country}}" id="" type="text" placeholder="Country" class="form-control"/>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+  <label>zip code</label>
+      <input name="" id="" value="{{zipcode}}" type="text" placeholder="zipcode" class="form-control"/>
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+  <button class="matchBtn red next" id="submitReg">Done</button>
+</div>
+
+<!--
+  <div class="form-group {{errorClass 'text'}}">
+      <label class="control-label" for="text">Birthday</label>
+      <div class="controls">
+          <input name="text" id="text" type="text" value="" placeholder="yyyy" class="form-control"/>
+          <span class="help-block">{{errorMessage 'text'}}</span>
+      </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>-->
+
+
+</template>

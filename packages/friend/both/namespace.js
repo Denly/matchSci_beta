@@ -1,0 +1,4 @@
+MS.Friend = {
+  Collections:{},
+  Methods:{}
+}

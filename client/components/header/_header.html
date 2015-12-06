@@ -1,0 +1,34 @@
+<template name="header">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{pathFor 'newsPage'}}">
+        <img class="logo" src="/machSci_logo_.svg">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navigation">
+
+        <ul class="nav navbar-nav navbar-right">
+          {{> loginButtons }}
+        </ul>
+        {{#if isUser}}
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+          <a href="{{pathFor 'postsList'}}">
+          <img class="iconInBar" src="/search.svg"></a>
+          </li>
+          <li class="dropdown">
+              {{> friendDropdown}}
+          </li>
+          <li class="dropdown">
+              {{> notifications}}
+          </li>
+          <!--<li>
+          <a><img class="iconInBar" id="open-subscriptions" src="/upgrade.svg"></a>
+          </li>-->
+        </ul>
+        {{/if}}
+      </div>
+    </div>
+  </nav>
+</template>
