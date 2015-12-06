@@ -10,3 +10,5 @@ then, using termial to run it.
  meteor  //run it!
  open localhost:3000 in browser
  That's it.
+ 
+ ps. the test account is email: lee@gmail.com  password: 123456
